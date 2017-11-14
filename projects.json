@@ -6,7 +6,6 @@ layout: none
  {
     "name": "{{ repository.name }}",
     "url": "{{ repository.html_url }}",
-    "fork": "{{ repository.fork }}",
-    "tags": "{{ repository | json }}"
+    "fork": "{{ repository.fork }}"
   }{% if forloop.last == false %},{% endif %}
 {% endfor %}]
